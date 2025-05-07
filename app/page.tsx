@@ -2,6 +2,7 @@ import About from "./components/About";
 import Apart from "./components/Apart";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Team from "./components/Team";
@@ -18,6 +19,7 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Contact />
+      <Footer/>
     </main>
   );
 }
