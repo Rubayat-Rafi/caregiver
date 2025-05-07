@@ -33,30 +33,30 @@ const Banner = () => {
         >
             {banners.map((slide) => (
                 <SwiperSlide key={slide.id}>
-                    <div className="relative h-[400px] md:h-[500px] lg:h-[700px]  rounded-b-[100px] overflow-hidden">
+                    <div className="relative h-[400px] md:h-[500px] xl:h-[700px]  rounded-b-[60px] md:rounded-b-[100px] xl:rounded-b-[150px] overflow-hidden outline-white outline-2">
                         <Image
                             src={slide.banner}
                             alt={`Banner image for slide ${slide.id}`}
                             layout="fill"
-                            className="object-cover items-start"
+                            className="object-cover rounded-b-[60px] md:rounded-b-[100px] xl:rounded-b-[150px]"
                             style={{ objectFit: 'cover' }}
                         />
                         <div className="absolute inset-0 bg-black opacity-25 z-10"></div>
                         <div className="absolute z-20 flex flex-col justify-center items-start w-full h-full text-white text-start">
                             <div className="max-w-[1440px] mx-auto w-11/12">
-                                <div className="bg-[#fe8a18] max-w-[600px] rounded-xl p-5">
-                                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-Montserrat mb-2 md:mb-3 
-                                 text-white rounded-md p-1 leading-14"  style={{ fontFamily: "var(--font-montserrat)" }} >
+                                <div className="bg-[#fe8a18] max-w-lg rounded-xl p-5">
+                                    <h1 className="text-2xl md:text-4xl font-bold font-Montserrat mb-2 md:mb-3 
+                                 text-white rounded-md p-1 md:leading-10"  style={{ fontFamily: "var(--font-montserrat)" }} >
                                         <span>Compassionate Care, </span>
                                         <span>Right at Home.</span>
                                     </h1>
                                     <p className="text-sm md:text-lg">Caring for Your Loved Ones Like They&apos;re Our Own.</p>
                                     <div className="space-x-4">
-                                        <button className="mt-4 md:mt-6 md:px-6 md:py-2 text-sm py-1 px-2 md:text-lg transition-all duration-300  rounded-md bg-white text-[#171717]">
-                                        Request Care
+                                        <button className="mt-4 md:mt-6 md:px-6 md:py-2 text-sm py-1 px-2 md:text-lg transition-all duration-300  rounded-md bg-white text-[#171717] hover:bg-gray-200 cursor-pointer">
+                                            Request Care
                                         </button>
-                                        <button className="mt-4 md:mt-6 md:px-6 md:py-2 text-sm py-1 px-2 md:text-lg transition-all duration-300  rounded-md bg-white text-[#171717]">
-                                        Call Us Today
+                                        <button className="mt-4 md:mt-6 md:px-6 md:py-2 text-sm py-1 px-2 md:text-lg transition-all duration-300  rounded-md bg-white text-[#171717] hover:bg-gray-200 cursor-pointer">
+                                            Call Us Today
                                         </button>
                                     </div>
                                 </div>
@@ -66,11 +66,6 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
             ))}
-
-            {/* 
-            <SwiperSlide>
-                <Image src='/banner-image/image1.jpg' alt='banner' height={500}  width={500}/>
-            </SwiperSlide> */}
         </Swiper>
     );
 };
