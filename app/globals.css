@@ -16,20 +16,16 @@ html, body{
   height: 100%;
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 
 @layer components{
   .btn-primary{
     background-color: var(--primary-color);
-    border-radius: 6px;
-    padding: 10px 24px;
     border: 2px solid var(--primary-color);
     color: var(--background);
-    font-size: 14px;
-    font-weight: 600; 
     cursor: pointer;
-
   }
 }
 

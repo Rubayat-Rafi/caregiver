@@ -4,19 +4,19 @@ import React from 'react';
 const Team = () => {
     const teamMembers = [
         {
-            photo: "/team/Profile-Picture-01.jpg",
+            photo: "/team/default_profile.png",
             name: "John Carter",
             credentials: "RN, CPR-Certified",
             philosophy: "Care is about dignity first.",
         },
         {
-            photo: "/team/Profile-Picture-01.jpg",
+            photo: "/team/default_profile.png",
             name: "John Carter",
             credentials: "RN, CPR-Certified",
             philosophy: "Care is about dignity first.",
         },
         {
-            photo: "/team/Profile-Picture-01.jpg",
+            photo: "/team/default_profile.png",
             name: "John Carter",
             credentials: "RN, CPR-Certified",
             philosophy: "Care is about dignity first.",

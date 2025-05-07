@@ -1,9 +1,26 @@
+'use client'
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import { FaClock, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
+type FormData = {
+    name: string;
+    email: string;
+    phone: number;
+    message: string;
+}
+
 const Contact = () => {
+    const {register, handleSubmit} = useForm<FormData>()
+
+
+    const handleFormData = (data:FormData) => {
+        console.log(data)
+    }
+
+
     return (
-        <section className='bg-gray-50'>
+        <section  id="contact" className='bg-gray-50'>
             <div className="max-w-[1440px] mx-auto w-11/12 py-12 md:py-20">
                 <div className="flex items-center justify-center mb-6 md:mb-10">
                     <h2 className='text-2xl font-black text-whie text-center  border-b-2 inline border-[#fe8a18]' style={{ fontFamily: "var(--font-montserrat)" }}>Ready to Get Started?</h2>
@@ -40,7 +57,7 @@ const Contact = () => {
                                 <div>
                                     <h3 className="text-gray-500 text-sm font-medium">Email</h3>
                                     <p className="text-[#171717] text-lg">
-                                        info@unitedcarelinks.com
+                                        info@caregiver.com
                                     </p>
                                 </div>
                             </div>
@@ -83,20 +100,18 @@ const Contact = () => {
                             Send Us a Message
                         </h2>
 
-                        <form className="space-y-6">
+                        <form onSubmit={handleSubmit(handleFormData)} className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label
-                                        htmlFor="first-name"
+                                        htmlFor="name"
                                         className="block text-sm font-medium text-gray-700 mb-1"
                                     >
-                                        First Name*
+                                    Name*
                                     </label>
                                     <input
                                         type="text"
-                                        id="first-name"
-                                        name="first-name"
-                                        required
+                                        {...register('name', {required: true})}
                                         className="w-full px-4 py-2 border border-gray-300 rounded-md  "
                                     />
                                 </div>
@@ -111,9 +126,7 @@ const Contact = () => {
                                     </label>
                                     <input
                                         type="email"
-                                        id="email"
-                                        name="email"
-                                        required
+                                        {...register('email', {required: true})}
                                         className="w-full px-4 py-2 border border-gray-300 rounded-md "
                                     />
                                 </div>
@@ -129,8 +142,7 @@ const Contact = () => {
                                 </label>
                                 <input
                                     type="tel"
-                                    id="phone"
-                                    name="phone"
+                                    {...register('phone')}
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md "
                                 />
                             </div>
@@ -144,16 +156,16 @@ const Contact = () => {
                                 </label>
                                 <textarea
                                     id="message"
-                                    name="message"
+                                    {...register('message', {required: true})}
                                     rows={4}
-                                    required
+  
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md "
                                 ></textarea>
                             </div>
 
                             <button
                                 type="submit"
-                                className="w-full btn-primary tracking-wide transition-colors duration-300 ease-in-out hover:bg-[#fb7d01] hover:border-[#fb7d01]"
+                                className="btn-primary tracking-wide transition-colors duration-300 ease-in-out hover:bg-[#fb7d01] hover:border-[#fb7d01] text-sm md:text-base font-medium py-1.5 px-2 rounded  md:py-2 md:px-4 border-2 w-full"
                             >
                                 Schedule a Free Consultation
                             </button>

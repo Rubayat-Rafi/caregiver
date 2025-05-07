@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaTwitter } from 'react-icons/fa';
 
@@ -10,18 +11,18 @@ const Footer = () => {
 
                     {/* About Section */}
                     <div>
-                    <h1 className='text-3xl text-white font-black ' style={{ fontFamily: "var(--font-montserrat)" }} > <span className='text-[#fe8a18]'>Care</span>giver </h1>
+                        <h1 className='text-3xl text-white font-black ' style={{ fontFamily: "var(--font-montserrat)" }} > <span className='text-[#fe8a18]'>Care</span>giver </h1>
                         <p className="mb-4 max-w-[450px]">
                             Compassionate care right at home. We provide personalized home care services with dignity and respect.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="hover:text-blue-300 transition-colors">
+                            <a href="#" className="hover:text-[#fe8a18] transition-colors">
                                 <FaFacebook size={20} />
                             </a>
-                            <a href="#" className="hover:text-blue-400 transition-colors">
+                            <a href="#" className="hover:text-[#fe8a18]  transition-colors">
                                 <FaTwitter size={20} />
                             </a>
-                            <a href="#" className="hover:text-pink-500 transition-colors">
+                            <a href="#" className="hover:text-[#fe8a18] transition-colors">
                                 <FaInstagram size={20} />
                             </a>
                         </div>
@@ -29,14 +30,15 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-                        <ul className="space-y-2">
-                            <li><a href="#" className="hover:text-[#fe8a18] transition-colors">Home</a></li>
-                            <li><a href="#" className="hover:text-[#fe8a18] transition-colors">Services</a></li>
-                            <li><a href="#" className="hover:text-[#fe8a18] transition-colors">About Us</a></li>
-                            <li><a href="#" className="hover:text-[#fe8a18] transition-colors">Careers</a></li>
-                            <li><a href="#" className="hover:text-[#fe8a18] transition-colors">Contact</a></li>
-                        </ul>
+                        <div className="md:flex md:flex-col md:items-center md:justify-center">
+                            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+                            <ul className="space-y-2">
+                                <li><Link href="/#home" className="hover:text-[#fe8a18] transition-colors">Home</Link></li>
+                                <li><Link href="/#services" className="hover:text-[#fe8a18] transition-colors">Services</Link></li>
+                                <li><Link href="/#about" className="hover:text-[#fe8a18] transition-colors">About Us</Link></li>
+                                <li><Link href="/#contact" className="hover:text-[#fe8a18] transition-colors">Contact</Link></li>
+                            </ul>
+                        </div>
                     </div>
 
                     {/* Contact Info */}
@@ -45,11 +47,11 @@ const Footer = () => {
                         <ul className="space-y-3">
                             <li className="flex items-center">
                                 <FaPhone className="mr-2 text-[#fe8a18]" />
-                                <span>(123) 456-7890</span>
+                                <span>(510) 402 9388</span>
                             </li>
                             <li className="flex items-center">
                                 <FaEnvelope className="mr-2 text-[#fe8a18]" />
-                                <span>info@unitedcarelinks.com</span>
+                                <span>info@caregiver.com</span>
                             </li>
                             <li className="flex items-start">
                                 <FaMapMarkerAlt className="mr-2 mt-1 text-[#fe8a18]" />

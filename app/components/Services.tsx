@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { FaHome, FaHeart, FaCar } from "react-icons/fa";
-
 const Services = () => {
 
     const services = [
@@ -27,9 +25,9 @@ const Services = () => {
 
 
     return (
-        <section className='bg-gray-50'>
+        <section id='services' className='bg-gray-50'>
             <div className="max-w-[1440px] w-11/12 mx-auto py-12 md:py-20">
-                <div className="flex items-center justify-center mb-6 md:mb-10">
+                <div className="flex items-center justify-center mb-10">
                     <h2 className='text-2xl font-black text-[#171717] text-center  border-b-2 inline border-[#fe8a18]' style={{ fontFamily: "var(--font-montserrat)" }}>How We Help</h2>
                 </div>
                 {/* services card */}

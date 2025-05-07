@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className='max-w-[1440px] w-11/12 mx-auto py-12 md:py-20'>
+        <section id='about' className='max-w-[1440px] w-11/12 mx-auto py-12 md:py-20'>
             <div className="flex items-center justify-center mb-6 md:mb-10">
                 <h2 className='text-2xl font-black text-[#171717] text-center  border-b-2 inline border-[#fe8a18]' style={{ fontFamily: "var(--font-montserrat)" }}>Who We Are</h2>
             </div>

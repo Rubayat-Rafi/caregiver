@@ -9,6 +9,7 @@ import "swiper/css/effect-fade";
 
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Banner = () => {
     const banners = [
@@ -21,7 +22,7 @@ const Banner = () => {
     ];
 
     return (
-        <Swiper
+        <Swiper id='home'
             spaceBetween={30}
             effect={"fade"}
             navigation={false}
@@ -41,25 +42,29 @@ const Banner = () => {
                             className="object-cover rounded-b-[60px] md:rounded-b-[100px] xl:rounded-b-[150px]"
                             style={{ objectFit: 'cover' }}
                         />
-                        <div className="absolute inset-0 bg-black opacity-25 z-10"></div>
+                        <div className="absolute inset-0 bg-black opacity-70 md:opacity-25 z-10"></div>
                         <div className="absolute z-20 flex flex-col justify-center items-start w-full h-full text-white text-start">
                             <div className="max-w-[1440px] mx-auto w-11/12">
-                                <div className="bg-[#fe8a18] max-w-lg rounded-xl p-5">
-                                    <h1 className="text-2xl md:text-4xl font-bold font-Montserrat mb-2 md:mb-3 
+
+
+                                <div className="md:bg-[#fe8a18] md:max-w-lg md:rounded-xl md:p-5">
+                                    <h1 className="text-2xl md:text-4xl font-bold font-Montserrat mb-1 md:mb-3 
                                  text-white rounded-md p-1 md:leading-10"  style={{ fontFamily: "var(--font-montserrat)" }} >
                                         <span>Compassionate Care, </span>
                                         <span>Right at Home.</span>
                                     </h1>
-                                    <p className="text-sm md:text-lg">Caring for Your Loved Ones Like They&apos;re Our Own.</p>
-                                    <div className="space-x-4">
-                                        <button className="mt-4 md:mt-6 md:px-6 md:py-2 text-sm py-1 px-2 md:text-lg transition-all duration-300  rounded-md bg-white text-[#171717] hover:bg-gray-200 cursor-pointer">
+                                    <p className="text-sm md:text-lg ">Caring for Your Loved Ones Like They&apos;re Our Own.</p>
+                                    <div className=" space-x-3 md:space-x-4 mt-3 md:mt-6">
+                                        <Link href='/#contact' className="md:px-4 md:py-2 text-sm py-1.5 px-2 md:text-lg transition-all duration-300 rounded md:rounded-md bg-[#fe8a18] text-white md:bg-white md:text-[#171717] hover:bg-gray-200 cursor-pointer">
                                             Request Care
-                                        </button>
-                                        <button className="mt-4 md:mt-6 md:px-6 md:py-2 text-sm py-1 px-2 md:text-lg transition-all duration-300  rounded-md bg-white text-[#171717] hover:bg-gray-200 cursor-pointer">
+                                        </Link>
+                                        <Link href="tel:5104029388"  className="md:px-4 md:py-2 text-sm py-1.5 px-2 md:text-lg transition-all duration-300 rounded md:rounded-md bg-[#fe8a18] text-white md:bg-white md:text-[#171717] hover:bg-gray-200 cursor-pointer">
                                             Call Us Today
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
