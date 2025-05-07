@@ -68,7 +68,7 @@ const Testimonials = () => {
             {/* Carousel Version */}
             <Slider {...settings}>
                 {testimonials.map((testimonial, index) => (
-                    <div key={index} className="px-5 py-5">
+                    <div key={index} className="px-5 pb-5">
                         <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
                             <div className="mb-4 text-[#fe8a18]">
                                 <FaQuoteLeft size={24} />

@@ -37,7 +37,7 @@ const Banner = () => {
                         <Image
                             src={slide.banner}
                             alt={`Banner image for slide ${slide.id}`}
-                            layout="fill"
+                            fill
                             className="object-cover rounded-b-[60px] md:rounded-b-[100px] xl:rounded-b-[150px]"
                             style={{ objectFit: 'cover' }}
                         />
@@ -60,7 +60,6 @@ const Banner = () => {
                                         </button>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
