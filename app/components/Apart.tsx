@@ -14,7 +14,7 @@ const Apart = () => {
                     <p className=" text-sm md:text-base mb-6  text-gray-100" style={{ fontFamily: 'var(--font-inter' }}>
                         At UCL caregiver agency, we go beyond standard caregiving — we provide concierge-level service tailored to each client&apos;s lifestyle. Our caregivers don&apos;t just assist; they anticipate. From preparing your favorite home-cooked meal just the way you like it, to driving you to appointments, social events, or even your favorite café — we’re here for it all. Need help tidying up the house? Done. Need your dog walked? Already on it. Whether it’s running errands, setting up your TV remote, organizing your fridge, or simply being someone you enjoy spending time with, our caregivers are hand-picked to bring both skill and heart into your daily life. This is personalized care on your terms — because you deserve more than the basics.
                     </p>
-                    <Link href='/#contact' className="md:px-6 md:py-2 text-sm py-1.5 px-2 md:text-lg transition-all duration-300 rounded  md:rounded-md bg-white text-[#171717] hover:bg-gray-200 cursor-pointer">
+                    <Link href='/#contact' className="md:px-6 md:py-2 text-sm py-2 px-3 md:text-lg transition-all duration-300 rounded  md:rounded-md bg-white text-[#171717] hover:bg-gray-200 cursor-pointer font-medium">
                         Learn More
                     </Link>
                 </div>

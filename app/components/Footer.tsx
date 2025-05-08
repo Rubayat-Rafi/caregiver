@@ -5,7 +5,7 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaTwitter
 const Footer = () => {
     return (
         <footer className="bg-[#171717] text-white pt-12 pb-6">
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1440px] mx-auto w-11/12">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8 place-content-center">
 

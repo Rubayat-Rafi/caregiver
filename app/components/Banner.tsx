@@ -48,17 +48,17 @@ const Banner = () => {
 
 
                                 <div className="md:bg-[#fe8a18] md:max-w-lg md:rounded-xl md:p-5">
-                                    <h1 className="text-2xl md:text-4xl font-bold font-Montserrat mb-1 md:mb-3 
-                                 text-white rounded-md p-1 md:leading-10"  style={{ fontFamily: "var(--font-montserrat)" }} >
+                                    <h1 className="text-2xl md:text-4xl font-bold font-Montserrat mb-2 md:mb-3 
+                                 text-white rounded-md md:leading-10" style={{ fontFamily: "var(--font-montserrat)" }} >
                                         <span>Compassionate Care, </span>
                                         <span>Right at Home.</span>
                                     </h1>
                                     <p className="text-sm md:text-lg ">Caring for Your Loved Ones Like They&apos;re Our Own.</p>
-                                    <div className=" space-x-3 md:space-x-4 mt-3 md:mt-6">
-                                        <Link href='/#contact' className="md:px-4 md:py-2 text-sm py-1.5 px-2 md:text-lg transition-all duration-300 rounded md:rounded-md bg-[#fe8a18] text-white md:bg-white md:text-[#171717] hover:bg-gray-200 cursor-pointer">
+                                    <div className=" space-x-3 md:space-x-4 mt-4 md:mt-6">
+                                        <Link href='/#contact' className="md:px-4 md:py-2 text-sm py-2 px-3 md:text-lg transition-all duration-300 rounded md:rounded-md bg-[#fe8a18] text-white md:bg-white md:text-[#171717] hover:bg-[#fb7d01]  md:hover:bg-gray-200 cursor-pointer">
                                             Request Care
                                         </Link>
-                                        <Link href="tel:5104029388"  className="md:px-4 md:py-2 text-sm py-1.5 px-2 md:text-lg transition-all duration-300 rounded md:rounded-md bg-[#fe8a18] text-white md:bg-white md:text-[#171717] hover:bg-gray-200 cursor-pointer">
+                                        <Link href="tel:5104029388"  className="md:px-4 md:py-2 text-sm py-2 px-3 md:text-lg transition-all duration-300 rounded md:rounded-md bg-[#fe8a18] text-white md:bg-white md:text-[#171717] hover:bg-[#fb7d01]  md:hover:bg-gray-200 cursor-pointer">
                                             Call Us Today
                                         </Link>
                                     </div>

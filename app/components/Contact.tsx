@@ -165,7 +165,7 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="btn-primary tracking-wide transition-colors duration-300 ease-in-out hover:bg-[#fb7d01] hover:border-[#fb7d01] text-sm md:text-base font-medium py-1.5 px-2 rounded  md:py-2 md:px-4 border-2 w-full"
+                                className="btn-primary tracking-wide transition-colors duration-300 ease-in-out hover:bg-[#fb7d01] hover:border-[#fb7d01] text-sm md:text-base font-medium py-2  rounded  md:py-2  border-2 w-full"
                             >
                                 Schedule a Free Consultation
                             </button>
