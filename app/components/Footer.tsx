@@ -11,18 +11,18 @@ const Footer = () => {
 
                     {/* About Section */}
                     <div>
-                        <h1 className='text-3xl text-white font-black ' style={{ fontFamily: "var(--font-montserrat)" }} > <span className='text-[#fe8a18]'>Care</span>giver </h1>
+                        <h1 className='text-3xl text-white font-black ' style={{ fontFamily: "var(--font-montserrat)" }} > <span className='text-secondary-color'>Care</span>giver </h1>
                         <p className="mb-4 max-w-[450px]">
                             Compassionate care right at home. We provide personalized home care services with dignity and respect.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="hover:text-[#fe8a18] transition-colors">
+                            <a href="#" className="hover:text-secondary-color transition-colors">
                                 <FaFacebook size={20} />
                             </a>
-                            <a href="#" className="hover:text-[#fe8a18]  transition-colors">
+                            <a href="#" className="hover:text-secondary-color  transition-colors">
                                 <FaTwitter size={20} />
                             </a>
-                            <a href="#" className="hover:text-[#fe8a18] transition-colors">
+                            <a href="#" className="hover:text-secondary-color transition-colors">
                                 <FaInstagram size={20} />
                             </a>
                         </div>
@@ -33,10 +33,10 @@ const Footer = () => {
                         <div className="md:flex md:flex-col md:items-center md:justify-center">
                             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
                             <ul className="space-y-2">
-                                <li><Link href="/#home" className="hover:text-[#fe8a18] transition-colors">Home</Link></li>
-                                <li><Link href="/#services" className="hover:text-[#fe8a18] transition-colors">Services</Link></li>
-                                <li><Link href="/#about" className="hover:text-[#fe8a18] transition-colors">About Us</Link></li>
-                                <li><Link href="/#contact" className="hover:text-[#fe8a18] transition-colors">Contact</Link></li>
+                                <li><Link href="/#home" className="hover:text-secondary-color transition-colors">Home</Link></li>
+                                <li><Link href="/#services" className="hover:text-secondary-color transition-colors">Services</Link></li>
+                                <li><Link href="/#about" className="hover:text-secondary-color transition-colors">About Us</Link></li>
+                                <li><Link href="/#contact" className="hover:text-secondary-color transition-colors">Contact</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -46,15 +46,15 @@ const Footer = () => {
                         <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
                         <ul className="space-y-3">
                             <li className="flex items-center">
-                                <FaPhone className="mr-2 text-[#fe8a18]" />
+                                <FaPhone className="mr-2 text-secondary-color" />
                                 <span>(510) 402 9388</span>
                             </li>
                             <li className="flex items-center">
-                                <FaEnvelope className="mr-2 text-[#fe8a18]" />
+                                <FaEnvelope className="mr-2 text-secondary-color" />
                                 <span>info@caregiver.com</span>
                             </li>
                             <li className="flex items-start">
-                                <FaMapMarkerAlt className="mr-2 mt-1 text-[#fe8a18]" />
+                                <FaMapMarkerAlt className="mr-2 mt-1 text-secondary-color" />
                                 <span>123 Care Street<br />Health City, HC 12345</span>
                             </li>
                         </ul>
@@ -85,8 +85,8 @@ const Footer = () => {
                 <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
                     <p>© {new Date().getFullYear()} Caregiver. All rights reserved.</p>
                     <div className="flex space-x-4 mt-4 md:mt-0">
-                        <a href="#" className="text-sm hover:text-[#fe8a18] transition-colors">Privacy Policy</a>
-                        <a href="#" className="text-sm hover:text-[#fe8a18] transition-colors">Terms of Service</a>
+                        <a href="#" className="text-sm hover:text-secondary-color transition-colors">Privacy Policy</a>
+                        <a href="#" className="text-sm hover:text-secondary-color transition-colors">Terms of Service</a>
                     </div>
                 </div>
             </div>

@@ -62,7 +62,7 @@ const Testimonials = () => {
     return (
         <section className="py-12 lg:py-20 max-w-[1440px] mx-auto w-11/12">
             <div className="flex items-center justify-center mb-6 md:mb-10">
-                <h2 className='text-2xl font-black text-[#171717] text-center  border-b-2 inline border-[#fe8a18]' style={{ fontFamily: "var(--font-montserrat)" }}>What Families Say</h2>
+                <h2 className='text-2xl font-black text-[#171717] text-center  border-b-2 inline border-primary-color' style={{ fontFamily: "var(--font-montserrat)" }}>What Families Say</h2>
             </div>
 
             {/* Carousel Version */}
@@ -70,7 +70,7 @@ const Testimonials = () => {
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="px-5 pb-5">
                         <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
-                            <div className="mb-4 text-[#fe8a18]">
+                            <div className="mb-4 text-secondary-color">
                                 <FaQuoteLeft size={24} />
                             </div>
                             <p className="text-gray-600 italic mb-4">&quot;{testimonial.quote}&quot;</p>

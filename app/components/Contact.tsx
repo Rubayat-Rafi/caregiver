@@ -23,13 +23,13 @@ const Contact = () => {
         <section  id="contact" className='bg-gray-50'>
             <div className="max-w-[1440px] mx-auto w-11/12 py-12 md:py-20">
                 <div className="flex items-center justify-center mb-6 md:mb-10">
-                    <h2 className='text-2xl font-black text-whie text-center  border-b-2 inline border-[#fe8a18]' style={{ fontFamily: "var(--font-montserrat)" }}>Ready to Get Started?</h2>
+                    <h2 className='text-2xl font-black text-whie text-center  border-b-2 inline border-primary-color' style={{ fontFamily: "var(--font-montserrat)" }}>Ready to Get Started?</h2>
                 </div>
                 {/* content form */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 ">
                     {/* Left Side - Contact Information */}
                     <div className=" p-8 rounded-lg">
-                        <h2 className="text-2xl font-semibold text-[#171717] mb-4">
+                        <h2 className="text-2xl font-semibold mb-4">
                             Get in Touch
                         </h2>
                         <p className="mb-6">
@@ -40,23 +40,23 @@ const Contact = () => {
                         <div className="space-y-6">
                             {/* Phone */}
                             <div className="flex items-start">
-                                <div className="bg-[#fff7ef]  p-3 rounded-full mr-4">
-                                    <FaPhone className="text-[#fe8a18] text-xl" />
+                                <div className="bg-[#fffaea]  p-3 rounded-full mr-4">
+                                    <FaPhone className="text-secondary-color text-xl" />
                                 </div>
                                 <div>
                                     <h3 className="text-gray-500 text-sm font-medium">Phone</h3>
-                                    <p className="text-[#171717] text-lg">(510) 402 9388</p>
+                                    <p className="text-lg">(510) 402 9388</p>
                                 </div>
                             </div>
 
                             {/* Email */}
                             <div className="flex items-start">
-                                <div className="bg-[#fff7ef]  p-3 rounded-full mr-4">
-                                    <FaEnvelope className="text-[#fe8a18] text-xl" />
+                                <div className="bg-[#fffaea]  p-3 rounded-full mr-4">
+                                    <FaEnvelope className="text-secondary-color text-xl" />
                                 </div>
                                 <div>
                                     <h3 className="text-gray-500 text-sm font-medium">Email</h3>
-                                    <p className="text-[#171717] text-lg">
+                                    <p className="text-lg">
                                         info@caregiver.com
                                     </p>
                                 </div>
@@ -64,14 +64,14 @@ const Contact = () => {
 
                             {/* Address */}
                             <div className="flex items-start">
-                                <div className="bg-[#fff7ef]  p-3 rounded-full mr-4">
-                                    <FaMapMarkerAlt className="text-[#fe8a18] text-xl" />
+                                <div className="bg-[#fffaea]  p-3 rounded-full mr-4">
+                                    <FaMapMarkerAlt className="text-secondary-color text-xl" />
                                 </div>
                                 <div>
                                     <h3 className="text-gray-500 text-sm font-medium">
                                         Our Address
                                     </h3>
-                                    <p className="text-[#171717] text-lg">
+                                    <p className="text-lg">
                                         13715 Rosecroft Way, San Diego, CA 92130, USA
                                     </p>
                                 </div>
@@ -79,14 +79,14 @@ const Contact = () => {
 
                             {/* Hours */}
                             <div className="flex items-start">
-                                <div className="bg-[#fff7ef]  p-3 rounded-full mr-4">
-                                    <FaClock className="text-[#fe8a18] text-xl" />
+                                <div className="bg-[#fffaea]  p-3 rounded-full mr-4">
+                                    <FaClock className="text-secondary-color text-xl" />
                                 </div>
                                 <div>
                                     <h3 className="text-gray-500 text-sm font-medium">
                                         Hours of Operation
                                     </h3>
-                                    <p className="text-[#171717] text-lg">
+                                    <p className="text-lg">
                                         Monday - Friday: 8:00 AM - 5:00 PM
                                     </p>
                                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                     </div>
 
                     {/* Right Side - Contact Form */}
-                    <div className="p-8 rounded-lg border-2 border-[#fe8a18] ">
+                    <div className="p-8 rounded-lg border-2 border-primary-color">
                         <h2 className="text-2xl font-semibold text-[#171717] mb-6">
                             Send Us a Message
                         </h2>
@@ -165,7 +165,7 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="btn-primary tracking-wide transition-colors duration-300 ease-in-out hover:bg-[#fb7d01] hover:border-[#fb7d01] text-sm md:text-base font-medium py-2  rounded  md:py-2  border-2 w-full"
+                                className="btn-primary tracking-wide transition-colors duration-300 text-prinary-color ease-in-out  opacity-90 text-sm md:text-base font-medium py-2 rounded md:py-2 border-2 w-full font-medium"
                             >
                                 Schedule a Free Consultation
                             </button>

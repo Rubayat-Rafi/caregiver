@@ -28,13 +28,13 @@ const Services = () => {
         <section id='services' className='bg-gray-50'>
             <div className="max-w-[1440px] w-11/12 mx-auto py-12 md:py-20">
                 <div className="flex items-center justify-center mb-10">
-                    <h2 className='text-2xl font-black text-[#171717] text-center  border-b-2 inline border-[#fe8a18]' style={{ fontFamily: "var(--font-montserrat)" }}>How We Help</h2>
+                    <h2 className='text-2xl font-black text-center  border-b-2 inline border-primary-color' style={{ fontFamily: "var(--font-montserrat)" }}>How We Help</h2>
                 </div>
                 {/* services card */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {services.map((service, index) => (
-                        <div key={index} className="flex flex-col items-start p-6 bg-white  hover:border-[#fe8a18] rounded-lg transition-transform duration-300 ease-in-out border-2 border-white">
-                            <div className="mb-4 p-3  bg-[#fff7ef] rounded-full text-[#fe8a18] -mt-14">
+                        <div key={index} className="flex flex-col items-start p-6 bg-white  hover:border-primary-color rounded-lg transition-transform duration-300 ease-in-out border-2 border-white">
+                            <div className="mb-4 p-3  bg-[#fffaea] rounded-full text-secondary-color -mt-14">
                                 <service.icon size={40} />
                             </div>
                             <h3 className="text-xl font-semibold text-gray-700 mb-2"  style={{ fontFamily: "var(--font-montserrat)" }}>{service.title}</h3>

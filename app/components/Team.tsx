@@ -37,7 +37,7 @@ const Team = () => {
         <section className="py-16 bg-gray-50 ">
             <div className="max-w-[1440px] mx-auto w-11/12">
                 <div className="flex items-center justify-center mb-6 md:mb-10">
-                    <h2 className='text-2xl font-black text-[#171717] text-center  border-b-2 inline border-[#fe8a18]' style={{ fontFamily: "var(--font-montserrat)" }}>Our Trusted Caregivers</h2>
+                    <h2 className='text-2xl font-black text-center  border-b-2 inline border-primary-color' style={{ fontFamily: "var(--font-montserrat)" }}>Our Trusted Caregivers</h2>
                 </div>
 
                 {/* cards content  */}
@@ -62,7 +62,7 @@ const Team = () => {
                                     group-hover:translate-y-0
                                 `}>
                                 <h3 className="text-xl md:text-2xl font-semibold text-white">{member.name}</h3>
-                                <p className="text-[#fe8a18] font-medium text-base md:text-lg">{member.credentials}</p>
+                                <p className="text-secondary-color font-medium text-base md:text-lg">{member.credentials}</p>
                                 <p className="text-sm md:text-base text-gray-200">{member.philosophy}</p>
                             </div>
                         </div>

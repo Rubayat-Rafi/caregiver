@@ -3,9 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-color: #fe8a18;
+  --primary-color: #ffdb61;
   --accent: #308d89;
-  --shade: #fb7d01;
+  --shade: #ffe488;
 }
 
 html, body{
@@ -17,6 +17,7 @@ html, body{
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  color: #171717;
 }
 
 
@@ -27,6 +28,24 @@ html, body{
     color: var(--background);
     cursor: pointer;
   }
+
+  .bg-primary-color {
+    background-color: var(--primary-color);
+  }
+  .text-prinary-color{
+    color: var(--foreground);
+  }
+  .text-secondary-color {
+    color: var(--primary-color);
+  }
+
+  .border-primary-color{
+    border: var(--primary-color);
+  }
+
+
+
+  
 }
 
 .swiper {
