@@ -55,10 +55,10 @@ const Banner = () => {
                                     </h1>
                                     <p className="text-sm md:text-lg text-shadow-lg">Caring for Your Loved Ones Like They&apos;re Our Own.</p>
                                     <div className=" space-x-3 md:space-x-4 mt-4 md:mt-6">
-                                        <Link href='/#contact' className="md:px-4 md:py-2 text-sm py-2 px-3 md:text-lg transition-all duration-300 rounded md:rounded-md bg-primary-color text-prinary-color hover:opacity-90  cursor-pointer font-medium">
+                                        <Link href='/#contact' className="md:px-6 md:py-3 text-base py-2 px-4 md:text-lg transition-all duration-300 rounded md:rounded-md bg-primary-color text-prinary-color hover:opacity-90  cursor-pointer font-medium">
                                             Request Care
                                         </Link>
-                                        <Link href="tel:5104029388"  className="md:px-4 md:py-2 text-sm py-2 px-3 md:text-lg transition-all duration-300 rounded md:rounded-md bg-primary-color text-prinary-color hover:opacity-90  cursor-pointer font-medium">
+                                        <Link href="tel:8588640192"  className="md:px-6 md:py-3 text-base py-2 px-4 md:text-lg transition-all duration-300 rounded md:rounded-md  bg-accent-color hover:opacity-90  cursor-pointer font-normal shadow">
                                             Call Us Today
                                         </Link>
                                     </div>

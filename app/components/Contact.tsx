@@ -45,7 +45,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-gray-500 text-sm font-medium">Phone</h3>
-                                    <p className="text-lg">(510) 402 9388</p>
+                                    <p className="text-lg">(858)864-0192</p>
                                 </div>
                             </div>
 
@@ -165,7 +165,7 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="btn-primary tracking-wide transition-colors duration-300 text-prinary-color ease-in-out  opacity-90 text-sm md:text-base font-medium py-2 rounded md:py-2 border-2 w-full font-medium"
+                                className="btn-primary tracking-wide transition-colors duration-300 ease-in-out  opacity-90 text-sm md:text-base py-2 rounded md:py-2 border-2 w-full font-medium"
                             >
                                 Schedule a Free Consultation
                             </button>

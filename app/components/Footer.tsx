@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaTwitter } from 'react-icons/fa';
@@ -11,7 +12,12 @@ const Footer = () => {
 
                     {/* About Section */}
                     <div>
-                        <h1 className='text-3xl text-white font-black ' style={{ fontFamily: "var(--font-montserrat)" }} > <span className='text-secondary-color'>Care</span>giver </h1>
+                        <div className="h-auto w-24 lg:w-28 mb-3">
+                            <Image src="/cgl-logo.png" alt="logo" width={500} height={500}
+                                className="w-full h-full object-cover"
+                                priority
+                            />
+                        </div>
                         <p className="mb-4 max-w-[450px]">
                             Compassionate care right at home. We provide personalized home care services with dignity and respect.
                         </p>
@@ -47,7 +53,7 @@ const Footer = () => {
                         <ul className="space-y-3">
                             <li className="flex items-center">
                                 <FaPhone className="mr-2 text-secondary-color" />
-                                <span>(510) 402 9388</span>
+                                <span>(858)864-0192</span>
                             </li>
                             <li className="flex items-center">
                                 <FaEnvelope className="mr-2 text-secondary-color" />
