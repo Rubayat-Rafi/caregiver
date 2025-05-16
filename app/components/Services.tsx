@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaHome, FaHeart, FaCar } from "react-icons/fa";
 const Services = () => {
@@ -37,12 +38,16 @@ const Services = () => {
                             <div className="mb-4 p-3  bg-[#fffaea] rounded-full text-secondary-color -mt-14">
                                 <service.icon size={40} />
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-700 mb-2"  style={{ fontFamily: "var(--font-montserrat)" }}>{service.title}</h3>
+                            <h3 className="text-xl font-semibold text-gray-700 mb-2" style={{ fontFamily: "var(--font-montserrat)" }}>{service.title}</h3>
                             <p className="text-gray-500 text-start text-sm">{service.description}</p>
                         </div>
                     ))}
                 </div>
-
+                <div className="flex items-center justify-center mt-10">
+                    <Link href='/learn-more' className="md:px-6 md:py-3 text-base py-2 px-4 transition-all duration-300 rounded md:rounded-md bg-primary-color text-prinary-color hover:opacity-90  cursor-pointer font-medium">
+                        All Services
+                    </Link>
+                </div>
             </div>
         </section>
     );

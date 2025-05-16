@@ -47,18 +47,17 @@ const Banner = () => {
                             <div className="max-w-[1440px] mx-auto w-11/12">
 
 
-                                <div className="md:max-w-lg md:rounded-xl md:p-5">
-                                    <h1 className="text-2xl md:text-4xl font-bold font-Montserrat mb-2 md:mb-3 
-                                 text-white rounded-md md:leading-10 text-shadow-lg" style={{ fontFamily: "var(--font-montserrat)" }} >
-                                        <span className='block'>Compassionate Care, </span>
-                                        <span>Right at Home.</span>
+                                <div className="md:max-w-3xl ">
+                                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-Montserrat mb-2 md:mb-3 
+                                 text-white rounded-md text-shadow-lg/20" style={{ fontFamily: "var(--font-montserrat)" }} >
+                                        <span className='block'>Compassionate Caregiving You Can Trust — At a Price You Can Afford</span>
                                     </h1>
-                                    <p className="text-sm md:text-lg text-shadow-lg">Caring for Your Loved Ones Like They&apos;re Our Own.</p>
+                                    <p className="text-sm md:text-lg lg:text-xl text-shadow-lg/20">Caring for Your Loved Ones Like They&apos;re Our Own.</p>
                                     <div className=" space-x-3 md:space-x-4 mt-4 md:mt-6">
                                         <Link href='/#contact' className="md:px-6 md:py-3 text-base py-2 px-4 md:text-lg transition-all duration-300 rounded md:rounded-md bg-primary-color text-prinary-color hover:opacity-90  cursor-pointer font-medium">
                                             Request Care
                                         </Link>
-                                        <Link href="tel:8588640192"  className="md:px-6 md:py-3 text-base py-2 px-4 md:text-lg transition-all duration-300 rounded md:rounded-md  bg-accent-color hover:opacity-90  cursor-pointer font-normal shadow">
+                                        <Link href="tel:8588640192" className="md:px-6 md:py-3 text-base py-2 px-4 md:text-lg transition-all duration-300 rounded md:rounded-md  bg-accent-color hover:opacity-90  cursor-pointer font-normal shadow">
                                             Call Us Today
                                         </Link>
                                     </div>

@@ -50,10 +50,10 @@ html, body{
   .bg-accent-color{
     background-color: var(--accent);
   }
+  .card-bg-color{
+    background-color: #fff6d7;
+  }
 
-
-
-  
 }
 
 .swiper {
