@@ -1,43 +1,18 @@
 'use client'
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
+import image1 from '../../public/team/image1.jpg'
+import image2 from '../../public/team/image2.jpg'
+import image3 from '../../public/team/image3.jpg'
+import image4 from '../../public/team/image4.webp'
 
 const Team = () => {
-    const [activeIndex, setActiveIndex] = useState<number | null>(null)
-
-
-    const teamMembers = [
-        {
-            photo: "/team/bussiness-man.png",
-            name: "John Carter",
-            credentials: "RN, CPR-Certified",
-            philosophy: "Care is about dignity first.",
-        },
-        {
-            photo: "/team/woman.png",
-            name: "John Carter",
-            credentials: "RN, CPR-Certified",
-            philosophy: "Care is about dignity first.",
-        },
-        {
-            photo: "/team/bussiness-man.png",
-            name: "John Carter",
-            credentials: "RN, CPR-Certified",
-            philosophy: "Care is about dignity first.",
-        },
-        {
-            photo: "/team/woman.png",
-            name: "John Carter",
-            credentials: "RN, CPR-Certified",
-            philosophy: "Care is about dignity first.",
-        },
-
+    const teamimage = [
+        { id: 1, photo: image1 },
+        { id: 2, photo: image3 },
+        { id: 3, photo: image2 },
+        { id: 4, photo: image4 },
     ];
-
-    const handleActiveCard = (index: number) => {
-        setActiveIndex(prev => (prev === index ? null : index));
-    }
-
 
     return (
         <section className="py-16 bg-gray-50 ">
@@ -48,30 +23,18 @@ const Team = () => {
 
                 {/* cards content  */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-content-center">
-                    {teamMembers.map((member, index) => (
-                        <div key={index}
-                            onClick={() => handleActiveCard(index)}
-                            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow relative group">
-                            <div className="relative aspect-square">
-                                <Image
-                                    src={member.photo}
-                                    alt={member.name}
-                                    fill
-                                    className="object-cover items-start justify-start opacity-15"
-                                />
-                            </div>
-                            <div className={`
-                                    absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-[#ffdb61] to-transparent 
-                                    transform transition-all duration-300 ease-in-out
-                                    ${activeIndex === index ? 'translate-y-0' : 'translate-y-full'}
-                                    group-hover:translate-y-0
-                                `}>
-                                <h3 className="text-xl md:text-2xl font-semibold">{member.name}</h3>
-                                <p className="text-accent-color font-medium text-base md:text-lg">{member.credentials}</p>
-                                <p className="text-sm md:text-base text-gray-600">{member.philosophy}</p>
-                            </div>
+                    {teamimage.map(team =>
+                        <div key={team.id} className="w-full h-auto">
+                            <Image
+                                src={team.photo}
+                                alt='Team image'
+                                width={500}
+                                height={500}
+                                className='rounded-2xl shadow-2xl border-secondary-color border-2 transition-transform duration-300 hover:scale-105 w-full h-full'
+                            />
                         </div>
-                    ))}
+                    )
+                    }
                 </div>
 
             </div>

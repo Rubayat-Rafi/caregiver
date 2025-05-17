@@ -7,7 +7,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import "swiper/css/effect-fade";
 
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,6 +19,8 @@ const Banner = () => {
         { id: 5, banner: '/banner-image/image5.jpg' },
         { id: 6, banner: '/banner-image/image6.jpg' },
     ];
+
+    
 
     return (
         <Swiper id='home'

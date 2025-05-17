@@ -42,6 +42,9 @@ html, body{
   .border-primary-color{
     border: var(--accent);
   }
+  .border-secondary-color{
+    border: var(--primary-color);
+  }
 
   .text-accent-color{
     color: var(--accent);

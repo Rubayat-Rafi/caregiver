@@ -1,7 +1,10 @@
 'use client'
 import React from 'react';
+import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import { FaClock, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import Swal from 'sweetalert2';
+
 
 type FormData = {
     name: string;
@@ -11,16 +14,41 @@ type FormData = {
 }
 
 const Contact = () => {
-    const {register, handleSubmit} = useForm<FormData>()
+    const { register, handleSubmit, reset } = useForm<FormData>()
+    const formRef = React.useRef<HTMLFormElement | null>(null);
 
+    const handleFormData = () => {
+        const YOUR_SERVICE_ID = 'service_geha6xo';
+        const YOUR_TEMPLATE = 'template_9p141gl';
+        const YOUR_PUBLIC_KEY = 'ofdx8--Xsp6U3VZX5';
 
-    const handleFormData = (data:FormData) => {
-        console.log(data)
+        if (formRef.current) {
+            emailjs
+                .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE, formRef.current, {
+                    publicKey: YOUR_PUBLIC_KEY,
+                })
+                .then(
+                    () => {
+                        Swal.fire({
+                            title: "Thanks For Your Message!",
+                            text: "We will contact you soon.",
+                            icon: "success"
+                        });
+                        reset();
+                    },
+                    (error) => {
+                        Swal.fire({
+                            title: "Oops!",
+                            text: `${error.text}`,
+                            icon: "error"
+                        });
+                    },
+                );
+        }
     }
 
-
     return (
-        <section  id="contact" className='bg-gray-50'>
+        <section id="contact" className='bg-gray-50'>
             <div className="max-w-[1440px] mx-auto w-11/12 py-12 md:py-20">
                 <div className="flex items-center justify-center mb-6 md:mb-10">
                     <h2 className='text-2xl font-black text-whie text-center  border-b-2 inline border-primary-color' style={{ fontFamily: "var(--font-montserrat)" }}>Ready to Get Started?</h2>
@@ -100,18 +128,18 @@ const Contact = () => {
                             Send Us a Message
                         </h2>
 
-                        <form onSubmit={handleSubmit(handleFormData)} className="space-y-6">
+                        <form ref={formRef} onSubmit={handleSubmit(handleFormData)} className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label
                                         htmlFor="name"
                                         className="block text-sm font-medium text-gray-700 mb-1"
                                     >
-                                    Name*
+                                        Name*
                                     </label>
                                     <input
                                         type="text"
-                                        {...register('name', {required: true})}
+                                        {...register('name', { required: true })}
                                         className="w-full px-4 py-2 border border-gray-300 rounded-md  "
                                     />
                                 </div>
@@ -126,7 +154,7 @@ const Contact = () => {
                                     </label>
                                     <input
                                         type="email"
-                                        {...register('email', {required: true})}
+                                        {...register('email', { required: true })}
                                         className="w-full px-4 py-2 border border-gray-300 rounded-md "
                                     />
                                 </div>
@@ -156,9 +184,9 @@ const Contact = () => {
                                 </label>
                                 <textarea
                                     id="message"
-                                    {...register('message', {required: true})}
+                                    {...register('message', { required: true })}
                                     rows={4}
-  
+
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md "
                                 ></textarea>
                             </div>
